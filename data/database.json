@@ -1,0 +1,515 @@
+{
+    "meta_info": {
+        "proyecto": "Asistente Seguro de Química Doméstica",
+        "version": "1.2",
+        "advertencia_global": "El uso indebido de productos químicos puede ser peligroso. Siempre realice pruebas de parche en la piel y ventile las áreas de limpieza."
+    },
+    "inventario_quimico": [
+        {
+            "id": "ing_001",
+            "nombres": [
+                "Vinagre Blanco",
+                "Vinagre de Limpieza",
+                "Ácido Acético Diluido"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Líquido ácido suave excelente para disolver cal, limpiar vidrios y eliminar malos olores.",
+            "ph": "Ácido (2-3)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Puede irritar los ojos.",
+                "incompatible_con": [
+                    "ing_003",
+                    "ing_005"
+                ]
+            },
+            "usos_comunes": [
+                "Suavizante de ropa",
+                "Limpiavidrios",
+                "Antical"
+            ]
+        },
+        {
+            "id": "ing_002",
+            "nombres": [
+                "Bicarbonato de Sodio",
+                "Bicarbonato"
+            ],
+            "categoria": "Limpieza / Cuidado Personal",
+            "descripcion": "Polvo blanco alcalino. Actúa como abrasivo suave y desodorante. Fungicida leve.",
+            "ph": "Alcalino (8-9)",
+            "seguridad": {
+                "toxicidad": "Nula (comestible en grado alimenticio)",
+                "irritante": "No",
+                "incompatible_con": [
+                    "ing_001 (Neutraliza el efecto limpiador si se almacenan juntos)"
+                ]
+            },
+            "usos_comunes": [
+                "Pasta de dientes casera",
+                "Exfoliante",
+                "Limpiador de hornos"
+            ]
+        },
+        {
+            "id": "ing_003",
+            "nombres": [
+                "Lejía",
+                "Cloro",
+                "Hipoclorito de Sodio",
+                "Lavandina"
+            ],
+            "categoria": "Limpieza (Desinfección)",
+            "descripcion": "Potente desinfectante y blanqueador. Oxida materia orgánica.",
+            "ph": "Muy Alcalino (11-13)",
+            "seguridad": {
+                "toxicidad": "Alta",
+                "irritante": "Muy irritante para piel, ojos y pulmones.",
+                "advertencia_critica": "NUNCA MEZCLAR CON ÁCIDOS O AMONÍACO.",
+                "incompatible_con": [
+                    "ing_001",
+                    "ing_004",
+                    "ing_005",
+                    "ing_006",
+                    "ing_007",
+                    "ing_014"
+                ]
+            },
+            "usos_comunes": [
+                "Desinfección de inodoros",
+                "Blanqueo de ropa blanca"
+            ]
+        },
+        {
+            "id": "ing_004",
+            "nombres": [
+                "Amoníaco",
+                "Amoniaco Líquido"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Desengrasante muy potente. Excelente para vidrios y grasa de cocina acumulada.",
+            "ph": "Alcalino (11)",
+            "seguridad": {
+                "toxicidad": "Media/Alta (Vapores fuertes)",
+                "irritante": "Irrita vías respiratorias.",
+                "incompatible_con": [
+                    "ing_003 (Produce gases mortales)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de cristales",
+                "Grasa de hornos"
+            ]
+        },
+        {
+            "id": "ing_005",
+            "nombres": [
+                "Agua Oxigenada",
+                "Peróxido de Hidrógeno"
+            ],
+            "categoria": "Limpieza / Primeros Auxilios",
+            "descripcion": "Desinfectante y blanqueador suave. Se descompone en agua y oxígeno.",
+            "ph": "Ligeramente Ácido",
+            "seguridad": {
+                "toxicidad": "Baja en concentraciones domésticas (3%)",
+                "irritante": "Puede blanquear la piel temporalmente.",
+                "incompatible_con": [
+                    "ing_001 (Crea Ácido Peracético - Corrosivo)"
+                ]
+            },
+            "usos_comunes": [
+                "Desinfección de heridas",
+                "Eliminar moho",
+                "Blanquear manchas de sangre"
+            ]
+        },
+        {
+            "id": "ing_006",
+            "nombres": [
+                "Alcohol Isopropílico",
+                "Alcohol de Limpieza"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Disolvente de rápida evaporación. Desinfectante.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Media (No ingerir)",
+                "irritante": "Seca la piel.",
+                "inflamable": "Sí, altamente inflamable.",
+                "incompatible_con": [
+                    "ing_003 (Crea Cloroformo)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de electrónica",
+                "Desinfección de superficies"
+            ]
+        },
+        {
+            "id": "ing_007",
+            "nombres": [
+                "Limón",
+                "Ácido Cítrico (Jugo)"
+            ],
+            "categoria": "Limpieza / Cuidado Personal",
+            "descripcion": "Ácido natural. Blanqueador suave y desengrasante. Aporta aroma.",
+            "ph": "Ácido (2)",
+            "seguridad": {
+                "toxicidad": "Nula",
+                "irritante": "Puede arder en heridas.",
+                "advertencia_critica": "FOTOTÓXICO: No exponer la piel al sol tras su uso (provoca quemaduras).",
+                "incompatible_con": [
+                    "ing_003"
+                ]
+            },
+            "usos_comunes": [
+                "Aclarar cabello",
+                "Eliminar óxido",
+                "Desodorizar"
+            ]
+        },
+        {
+            "id": "ing_008",
+            "nombres": [
+                "Aceite de Coco",
+                "Manteca de Coco"
+            ],
+            "categoria": "Cuidado Personal",
+            "descripcion": "Aceite vegetal hidratante y antibacteriano suave. Sólido a temperatura ambiente.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Nula",
+                "irritante": "No (comodogénico para algunas pieles con acné).",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Hidratante corporal",
+                "Mascarilla capilar",
+                "Base para exfoliantes"
+            ]
+        },
+        {
+            "id": "ing_009",
+            "nombres": [
+                "Jabón de Castilla",
+                "Jabón Neutro Líquido"
+            ],
+            "categoria": "Limpieza / Cuidado Personal",
+            "descripcion": "Jabón base vegetal biodegradable. Muy versátil.",
+            "ph": "Alcalino (9)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Ojos.",
+                "incompatible_con": [
+                    "ing_001",
+                    "ing_007",
+                    "ing_014"
+                ]
+            },
+            "usos_comunes": [
+                "Gel de cuerpo",
+                "Limpiasuelos",
+                "Detergente de ropa"
+            ]
+        },
+        {
+            "id": "ing_010",
+            "nombres": [
+                "Aceite Esencial de Árbol de Té",
+                "Tea Tree Oil",
+                "Melaleuca"
+            ],
+            "categoria": "Cuidado Personal / Limpieza",
+            "descripcion": "Aceite esencial concentrado con propiedades antifúngicas y antibacterianas potentes.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Alta si se ingiere. Tóxico para mascotas (gatos/perros).",
+                "irritante": "Muy irritante puro. SIEMPRE diluir.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Tratamiento acné puntual",
+                "Fungicida para moho",
+                "Antipiojos"
+            ]
+        },
+        {
+            "id": "ing_011",
+            "nombres": [
+                "Fécula de Maíz",
+                "Maizena",
+                "Almidón de Maíz"
+            ],
+            "categoria": "Cuidado Personal / Limpieza",
+            "descripcion": "Polvo fino absorbente. Calma la piel y absorbe grasa.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Nula",
+                "irritante": "No",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Talco casero",
+                "Eliminar manchas de aceite en ropa",
+                "Espesante"
+            ]
+        },
+        {
+            "id": "ing_012",
+            "nombres": [
+                "Glicerina Vegetal",
+                "Glicerol"
+            ],
+            "categoria": "Cuidado Personal",
+            "descripcion": "Líquido viscoso humectante. Atrae la humedad del aire a la piel.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "No",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Jabones",
+                "Cremas hidratantes",
+                "Burbujas de baño"
+            ]
+        },
+        {
+            "id": "ing_013",
+            "nombres": [
+                "Aceite de Oliva",
+                "Aceite de Oliva Virgen"
+            ],
+            "categoria": "Cuidado Personal / Limpieza",
+            "descripcion": "Aceite rico en antioxidantes. Nutritivo para piel seca y madera.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Nula",
+                "irritante": "No",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Hidratante cabello",
+                "Lustramuebles",
+                "Desmaquillante"
+            ]
+        },
+        {
+            "id": "ing_014",
+            "nombres": [
+                "Ácido Cítrico en Polvo",
+                "Sal de Limón"
+            ],
+            "categoria": "Limpieza / Cuidado Personal",
+            "descripcion": "Cristales ácidos potentes. Excelente antical y conservante natural.",
+            "ph": "Muy Ácido (1-2)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Irrita ojos y heridas abiertas.",
+                "incompatible_con": [
+                    "ing_003 (Genera gas cloro mortal)"
+                ]
+            },
+            "usos_comunes": [
+                "Bombas de baño",
+                "Limpieza de inodoros",
+                "Descalcificar cafeteras"
+            ]
+        }
+    ],
+    "recetas_sugeridas": [
+        {
+            "id_receta": "rec_001",
+            "nombre": "Limpiador Multiusos Básico",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "50%"
+                },
+                {
+                    "id": "agua",
+                    "cantidad": "50%"
+                }
+            ],
+            "instrucciones": "Mezclar el vinagre y el agua en una botella con atomizador. Agitar antes de usar.",
+            "advertencias": "No usar sobre superficies de piedra natural como mármol o granito (el ácido las corroe)."
+        },
+        {
+            "id_receta": "rec_002",
+            "nombre": "Pasta para Horno Quemado",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_002",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "id": "agua",
+                    "cantidad": "Suficiente para formar pasta"
+                }
+            ],
+            "instrucciones": "Mezclar bicarbonato con agua hasta formar una pasta espesa. Aplicar sobre la grasa, dejar actuar toda la noche y retirar con paño húmedo.",
+            "advertencias": "Usar guantes para evitar resecar las manos por el pH alcalino."
+        },
+        {
+            "id_receta": "rec_003",
+            "nombre": "Exfoliante Labial de Coco",
+            "categoria": "Cuidado Personal",
+            "ingredientes": [
+                {
+                    "id": "ing_008",
+                    "cantidad": "1 cucharada"
+                },
+                {
+                    "id": "azucar",
+                    "cantidad": "1 cucharada (no incluida en inventario, ingrediente cocina)"
+                }
+            ],
+            "instrucciones": "Mezclar el aceite de coco con azúcar. Frotar suavemente en los labios y enjuagar.",
+            "advertencias": "Si tienes alergia al coco, sustituir por aceite de oliva."
+        },
+        {
+            "id_receta": "rec_004",
+            "nombre": "Limpiavidrios Sin Rayas",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_006",
+                    "cantidad": "1 parte"
+                },
+                {
+                    "id": "ing_001",
+                    "cantidad": "1 parte"
+                },
+                {
+                    "id": "agua",
+                    "cantidad": "2 partes"
+                }
+            ],
+            "instrucciones": "Mezclar alcohol isopropílico, vinagre y agua. Usar con paño de microfibra.",
+            "advertencias": "Mantener lejos del fuego. El alcohol es inflamable."
+        },
+        {
+            "id_receta": "rec_005",
+            "nombre": "Desatascador de Tuberías Ecológico",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_002",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "id": "ing_001",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "id": "agua_caliente",
+                    "cantidad": "1 litro (hirviendo)"
+                }
+            ],
+            "instrucciones": "1. Verter el bicarbonato en el desagüe. 2. Añadir el vinagre (hará mucha espuma, ¡es normal!). 3. Tapar el desagüe y esperar 15 min. 4. Verter el agua hirviendo con cuidado.",
+            "advertencias": "No usar si antes usaste un desatascador químico comercial (podría reaccionar)."
+        },
+        {
+            "id_receta": "rec_006",
+            "nombre": "Lustramuebles de Madera",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_013",
+                    "cantidad": "2 partes"
+                },
+                {
+                    "id": "ing_007",
+                    "cantidad": "1 parte (Jugo de limón)"
+                }
+            ],
+            "instrucciones": "Mezclar bien en un frasco. Aplicar una pequeña cantidad en un paño suave y frotar la madera en dirección de la veta.",
+            "advertencias": "Preparar solo la cantidad a usar en el momento, el limón fresco se pudre rápido."
+        },
+        {
+            "id_receta": "rec_007",
+            "nombre": "Talco Desodorante para Pies",
+            "categoria": "Cuidado Personal",
+            "ingredientes": [
+                {
+                    "id": "ing_011",
+                    "cantidad": "3 cucharadas"
+                },
+                {
+                    "id": "ing_002",
+                    "cantidad": "1 cucharada"
+                },
+                {
+                    "id": "ing_010",
+                    "cantidad": "5 gotas (Opcional)"
+                }
+            ],
+            "instrucciones": "Mezclar los polvos en un recipiente hermético. Añadir el aceite esencial y agitar bien para romper grumos. Aplicar en pies secos.",
+            "advertencias": "No aplicar sobre heridas abiertas."
+        },
+        {
+            "id_receta": "rec_008",
+            "nombre": "Bombas de Baño Efervescentes",
+            "categoria": "Cuidado Personal",
+            "ingredientes": [
+                {
+                    "id": "ing_002",
+                    "cantidad": "1 taza"
+                },
+                {
+                    "id": "ing_014",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "id": "ing_011",
+                    "cantidad": "1/2 taza"
+                },
+                {
+                    "id": "ing_008",
+                    "cantidad": "2 cucharadas (derretido)"
+                }
+            ],
+            "instrucciones": "Mezclar polvos secos. Añadir el aceite poco a poco mientras mezclas con las manos hasta que parezca arena húmeda. Compactar en moldes y dejar secar 24h.",
+            "advertencias": "Tener cuidado al salir de la bañera, el aceite puede dejarla resbaladiza."
+        }
+    ],
+    "reglas_prohibidas_guardrails": [
+        {
+            "ingrediente_A": "ing_003",
+            "ingrediente_B": "ing_004",
+            "resultado": "Gas Cloramina",
+            "peligro": "MORTAL. Daño pulmonar severo.",
+            "mensaje_usuario": "¡PELIGRO EXTREMO! Estás intentando mezclar Lejía y Amoníaco. Esto crea vapores tóxicos que pueden matarte. NUNCA hagas esto."
+        },
+        {
+            "ingrediente_A": "ing_003",
+            "ingrediente_B": "ing_001",
+            "resultado": "Gas Cloro",
+            "peligro": "Alta toxicidad. Quemaduras químicas en pulmones.",
+            "mensaje_usuario": "¡ALTO! No mezcles Lejía con Vinagre (ni ningún ácido). Libera gas cloro, que es altamente venenoso."
+        },
+        {
+            "ingrediente_A": "ing_003",
+            "ingrediente_B": "ing_014",
+            "resultado": "Gas Cloro",
+            "peligro": "Alta toxicidad. Idéntico a mezclar con vinagre pero más rápido por la concentración.",
+            "mensaje_usuario": "¡PELIGRO! El Ácido Cítrico es muy fuerte y mezclado con Lejía libera gas cloro inmediatamente."
+        },
+        {
+            "ingrediente_A": "ing_005",
+            "ingrediente_B": "ing_001",
+            "resultado": "Ácido Peracético",
+            "peligro": "Corrosivo e irritante.",
+            "mensaje_usuario": "No mezcles Agua Oxigenada con Vinagre en el mismo envase. Crea un ácido corrosivo que puede dañar tu piel y pulmones."
+        },
+        {
+            "ingrediente_A": "ing_010",
+            "ingrediente_B": "PIEL_DIRECTA",
+            "resultado": "Quemadura química / Sensibilización",
+            "peligro": "Irritación severa.",
+            "mensaje_usuario": "Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva)."
+        }
+    ]
+}

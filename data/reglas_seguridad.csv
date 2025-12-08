@@ -1,0 +1,6 @@
+Ingrediente_A,Ingrediente_B,Resultado,Peligro,Mensaje_Usuario
+ing_003,ing_004,Gas Cloramina,"MORTAL. Daño pulmonar severo.","¡PELIGRO EXTREMO! Estás intentando mezclar Lejía y Amoníaco. Esto crea vapores tóxicos que pueden matarte. NUNCA hagas esto."
+ing_003,ing_001,Gas Cloro,"Alta toxicidad. Quemaduras químicas en pulmones.","¡ALTO! No mezcles Lejía con Vinagre (ni ningún ácido). Libera gas cloro, que es altamente venenoso."
+ing_003,ing_014,Gas Cloro,"Alta toxicidad. Idéntico a mezclar con vinagre pero más rápido por la concentración.","¡PELIGRO! El Ácido Cítrico es muy fuerte y mezclado con Lejía libera gas cloro inmediatamente."
+ing_005,ing_001,Ácido Peracético,Corrosivo e irritante.,"No mezcles Agua Oxigenada con Vinagre en el mismo envase. Crea un ácido corrosivo que puede dañar tu piel y pulmones."
+ing_010,PIEL_DIRECTA,"Quemadura química / Sensibilización",Irritación severa.,"Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva)."
