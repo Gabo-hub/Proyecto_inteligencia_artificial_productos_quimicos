@@ -5,9 +5,11 @@
 1.  **Instalar Python:**
     Descarga e instala Python desde su sitio web oficial: [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-2.  **Instalar dependencias del proyecto:**
-    Navega al directorio raíz del proyecto en tu terminal y ejecuta el siguiente comando para instalar las librerías necesarias:
+2.  **Clonar el repositorio e instalar dependencias del proyecto:**
+    Clona el repositorio en tu terminal y ejecuta el siguiente comando para instalar las librerías necesarias:
     ```bash
+    git clone https://github.com/Gabo-hub/Proyecto_inteligencia_artificial_productos_quimicos.git
+    cd Proyecto_inteligencia_artificial_productos_quimicos
     pip install -r requirements.txt
     ```
 
