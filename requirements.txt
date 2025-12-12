@@ -1,4 +1,7 @@
 langchain
-langchain_community
-langchain_ollama
+langchain-community
+langchain-ollama
+python-dotenv
 faiss_cpu
+flask
+flask_cors

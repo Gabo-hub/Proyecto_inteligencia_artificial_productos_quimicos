@@ -175,3 +175,23 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+# ========================================
+# QuimicAI Project Specific
+# ========================================
+
+# Old directory structure (can be removed after migration)
+front/
+src/
+scripts/
+
+# Vector store cache
+data/vector_store/
+
+# Environment variables
+.env
+
+# Test output files
+test_output.txt
+diagnostic_output.txt
+*.pyc

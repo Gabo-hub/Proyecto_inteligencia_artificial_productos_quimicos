@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuimicAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- PANEL HISTORIAL -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Historial</h2>
+                <button id="newChatBtn" class="add-btn">+</button>
+            </div>
+
+            <ul id="historyList" class="history-list">
+                <!-- Se llenará con JS -->
+            </ul>
+        </aside>
+
+        <!-- ÁREA PRINCIPAL DEL CHAT -->
+        <main class="chat-section">
+
+            <!-- ENCABEZADO -->
+            <div class="chat-header">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo QuimicAI" />
+                <div class="title">
+                    <h1>QuimicAI</h1>
+                    <span class="status">en línea</span>
+                </div>
+            </div>
+
+            <!-- MENSAJES -->
+            <div id="chatBox" class="chat-box">
+                <!-- Burbujas aparecerán aquí -->
+            </div>
+
+            <!-- BARRA PARA ENVIAR MENSAJES -->
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
+                <button id="sendBtn" class="send-btn">➤</button>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

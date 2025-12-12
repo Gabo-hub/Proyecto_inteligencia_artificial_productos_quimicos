@@ -1,4 +1,4 @@
-from index import cargar_base_conocimiento
+from verify_logic import cargar_base_conocimiento
 
 docs = cargar_base_conocimiento()
 print(f"Total documents loaded: {len(docs)}")
