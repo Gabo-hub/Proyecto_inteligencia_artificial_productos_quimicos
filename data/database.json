@@ -1,8 +1,9 @@
 {
     "meta_info": {
         "proyecto": "Asistente Seguro de Química Doméstica",
-        "version": "1.2",
-        "advertencia_global": "El uso indebido de productos químicos puede ser peligroso. Siempre realice pruebas de parche en la piel y ventile las áreas de limpieza."
+        "version": "2.0",
+        "advertencia_global": "El uso indebido de productos químicos puede ser peligroso. Siempre realice pruebas de parche en la piel y ventile las áreas de limpieza.",
+        "ultima_actualizacion": "2025-12-12"
     },
     "inventario_quimico": [
         {
@@ -356,13 +357,12 @@
                 "Hidratación"
             ]
         },
-        
         {
             "id": "ing_016",
             "nombres": [
-            "Bicarbonato de Sodio",
-            "Polvo de Hornear",
-            "Carbonato de Sodio"
+                "Bicarbonato de Sodio",
+                "Polvo de Hornear",
+                "Carbonato de Sodio"
             ],
             "categoria": "Limpieza / Cuidado Personal",
             "descripcion": "Polvo blanco alcalino que neutraliza olores y actúa como abrasivo suave. Absorbente y limpiador.",
@@ -419,7 +419,7 @@
                 "Exfoliante corporal",
                 "Limpieza de manchas en metales"
             ]
-        }, 
+        },
         {
             "id": "ing_019",
             "nombres": [
@@ -440,7 +440,7 @@
                 "Crema hidratante",
                 "Tratamiento para quemaduras leves"
             ]
-        }, 
+        },
         {
             "id": "ing_020",
             "nombres": [
@@ -460,7 +460,7 @@
                 "Baño relajante",
                 "Tratamiento para piel irritada"
             ]
-        }, 
+        },
         {
             "id": "ing_021",
             "nombres": [
@@ -480,7 +480,7 @@
                 "Crema corporal",
                 "Tratamiento para cutículas"
             ]
-        }, 
+        },
         {
             "id": "ing_022",
             "nombres": [
@@ -497,388 +497,592 @@
                     "ing_016 (Bicarbonato de Sodio - reacciona generando gas)"
                 ]
             },
-        "usos_comunes": [
-            "Limpieza de verduras",
-            "Tónico para cabello",
-            "Eliminador de manchas"
-        ]
-    },
-    {
-        "id": "ing_023",
-        "nombres": [
-            "Bórax",
-            "Borato de Sodio"
-        ],
-        "categoria": "Limpieza / Cuidado Personal",
-        "descripcion": "Polvo alcalino con propiedades limpiadoras y conservantes. Endurece jabones.",
-        "ph": "Alcalino (9-10)",
-        "seguridad": {
-            "toxicidad": "Baja (usar en pequeñas cantidades)",
-            "irritante": "Puede irritar piel; no ingerir.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - neutraliza)"
+            "usos_comunes": [
+                "Limpieza de verduras",
+                "Tónico para cabello",
+                "Eliminador de manchas"
             ]
         },
-        "usos_comunes": [
-            "Jabones caseros",
-            "Limpieza de pisos",
-            "Conservante natural"
-        ]
-    },
-    {
-        "id": "ing_025",
-        "nombres": [
-            "Lauril Sulfato de Sodio (SLS)",
-            "Sodium Lauryl Sulfate"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Surfactante aniónico espumante. Reduce la tensión superficial y elimina grasa.",
-        "ph": "Neutro (en solución)",
-        "seguridad": {
-            "toxicidad": "Baja (puede irritar piel en concentraciones altas)",
-            "irritante": "Sí, para piel y ojos; diluir.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - reduce eficacia)"
+        {
+            "id": "ing_023",
+            "nombres": [
+                "Bórax",
+                "Borato de Sodio"
+            ],
+            "categoria": "Limpieza / Cuidado Personal",
+            "descripcion": "Polvo alcalino con propiedades limpiadoras y conservantes. Endurece jabones.",
+            "ph": "Alcalino (9-10)",
+            "seguridad": {
+                "toxicidad": "Baja (usar en pequeñas cantidades)",
+                "irritante": "Puede irritar piel; no ingerir.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - neutraliza)"
+                ]
+            },
+            "usos_comunes": [
+                "Jabones caseros",
+                "Limpieza de pisos",
+                "Conservante natural"
             ]
         },
-        "usos_comunes": [
-            "Detergentes líquidos",
-            "Champús",
-            "Limpieza de pisos"
-        ]
-    },
-    {
-        "id": "ing_026",
-        "nombres": [
-            "Hipoclorito de Sodio",
-            "Lejía",
-            "Cloro Líquido"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Solución alcalina oxidante. Desinfecta y blanquea superficies.",
-        "ph": "Alcalino (11-13)",
-        "seguridad": {
-            "toxicidad": "Media (libera gas cloro tóxico)",
-            "irritante": "Sí, piel y vías respiratorias; usar con ventilación.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - genera gas cloro mortal)",
-                "ing_029 (Vinagre de Manzana - reduce eficacia)"
+        {
+            "id": "ing_025",
+            "nombres": [
+                "Lauril Sulfato de Sodio (SLS)",
+                "Sodium Lauryl Sulfate"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Surfactante aniónico espumante. Reduce la tensión superficial y elimina grasa.",
+            "ph": "Neutro (en solución)",
+            "seguridad": {
+                "toxicidad": "Baja (puede irritar piel en concentraciones altas)",
+                "irritante": "Sí, para piel y ojos; diluir.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - reduce eficacia)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes líquidos",
+                "Champús",
+                "Limpieza de pisos"
             ]
         },
-        "usos_comunes": [
-            "Desinfectante de baños",
-            "Blanqueador de telas",
-            "Limpieza de piscinas"
-        ]
-    },
-    {
-        "id": "ing_027",
-        "nombres": [
-            "Ácido Sulfúrico",
-            "Vitriolo"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina incrustaciones minerales.",
-        "ph": "Muy Ácido (<1)",
-        "seguridad": {
-            "toxicidad": "Alta (corrosivo)",
-            "irritante": "Extremadamente irritante; usar protección.",
-            "incompatible_con": [
-                "ing_016 (Bicarbonato de Sodio - reacción violenta)",
-                "ing_041 (Hipoclorito de Sodio - genera gases tóxicos)"
+        {
+            "id": "ing_026",
+            "nombres": [
+                "Hipoclorito de Sodio",
+                "Lejía",
+                "Cloro Líquido"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Solución alcalina oxidante. Desinfecta y blanquea superficies.",
+            "ph": "Alcalino (11-13)",
+            "seguridad": {
+                "toxicidad": "Media (libera gas cloro tóxico)",
+                "irritante": "Sí, piel y vías respiratorias; usar con ventilación.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - genera gas cloro mortal)",
+                    "ing_029 (Vinagre de Manzana - reduce eficacia)"
+                ]
+            },
+            "usos_comunes": [
+                "Desinfectante de baños",
+                "Blanqueador de telas",
+                "Limpieza de piscinas"
             ]
         },
-        "usos_comunes": [
-            "Desatascador de cañerías",
-            "Limpieza de baterías",
-            "Descalcificador industrial"
-        ]
-    },
-    {
-        "id": "ing_028",
-        "nombres": [
-            "Fosfato Trisódico",
-            "TSP"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Sal alcalina detergente. Elimina grasa y residuos minerales.",
-        "ph": "Alcalino (12)",
-        "seguridad": {
-            "toxicidad": "Baja (puede afectar ecosistemas acuáticos)",
-            "irritante": "Sí, piel; usar guantes.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - neutraliza)"
+        {
+            "id": "ing_027",
+            "nombres": [
+                "Ácido Sulfúrico",
+                "Vitriolo"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina incrustaciones minerales.",
+            "ph": "Muy Ácido (<1)",
+            "seguridad": {
+                "toxicidad": "Alta (corrosivo)",
+                "irritante": "Extremadamente irritante; usar protección.",
+                "incompatible_con": [
+                    "ing_016 (Bicarbonato de Sodio - reacción violenta)",
+                    "ing_041 (Hipoclorito de Sodio - genera gases tóxicos)"
+                ]
+            },
+            "usos_comunes": [
+                "Desatascador de cañerías",
+                "Limpieza de baterías",
+                "Descalcificador industrial"
             ]
         },
-        "usos_comunes": [
-            "Limpieza de paredes",
-            "Desengrasante de motores",
-            "Preparación de superficies para pintura"
-        ]
-    }, 
-    {
-        "id": "ing_029",
-        "nombres": [
-            "Ácido Clorhídrico",
-            "Muriático"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina óxido.",
-        "ph": "Muy Ácido (<1)",
-        "seguridad": {
-            "toxicidad": "Alta (libera vapores tóxicos)",
-            "irritante": "Extremadamente irritante; ventilación obligatoria.",
-            "incompatible_con": [
-                "ing_016 (Bicarbonato de Sodio - reacción violenta)",
-                "ing_041 (Hipoclorito de Sodio - genera gas cloro)"
+        {
+            "id": "ing_028",
+            "nombres": [
+                "Fosfato Trisódico",
+                "TSP"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Sal alcalina detergente. Elimina grasa y residuos minerales.",
+            "ph": "Alcalino (12)",
+            "seguridad": {
+                "toxicidad": "Baja (puede afectar ecosistemas acuáticos)",
+                "irritante": "Sí, piel; usar guantes.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - neutraliza)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de paredes",
+                "Desengrasante de motores",
+                "Preparación de superficies para pintura"
             ]
         },
-        "usos_comunes": [
-            "Limpieza de piscinas",
-            "Eliminador de óxido",
-            "Descalcificador de calderas"
-        ]
-    },
-    {
-        "id": "ing_030",
-        "nombres": [
-            "Lauril Éter Sulfato de Sodio (SLES)",
-            "Sodium Laureth Sulfate"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Surfactante suave espumante. Menos irritante que SLS, elimina suciedad.",
-        "ph": "Neutro",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "Menos que SLS; diluir.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - reduce espuma)"
+        {
+            "id": "ing_029",
+            "nombres": [
+                "Ácido Clorhídrico",
+                "Muriático"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina óxido.",
+            "ph": "Muy Ácido (<1)",
+            "seguridad": {
+                "toxicidad": "Alta (libera vapores tóxicos)",
+                "irritante": "Extremadamente irritante; ventilación obligatoria.",
+                "incompatible_con": [
+                    "ing_016 (Bicarbonato de Sodio - reacción violenta)",
+                    "ing_041 (Hipoclorito de Sodio - genera gas cloro)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de piscinas",
+                "Eliminador de óxido",
+                "Descalcificador de calderas"
             ]
         },
-        "usos_comunes": [
-            "Detergentes suaves",
-            "Jabones líquidos",
-            "Limpieza de baños"
-        ]
-    }, 
-    {
-        "id": "ing_031",
-        "nombres": [
-            "Ácido Acético Glacial",
-            "Vinagre Concentrado"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina residuos ácidos.",
-        "ph": "Muy Ácido (1-2)",
-        "seguridad": {
-            "toxicidad": "Media (corrosivo)",
-            "irritante": "Sí, piel y ojos; diluir.",
-            "incompatible_con": [
-                "ing_016 (Bicarbonato de Sodio - genera gas CO2)"
+        {
+            "id": "ing_030",
+            "nombres": [
+                "Lauril Éter Sulfato de Sodio (SLES)",
+                "Sodium Laureth Sulfate"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Surfactante suave espumante. Menos irritante que SLS, elimina suciedad.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Menos que SLS; diluir.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - reduce espuma)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes suaves",
+                "Jabones líquidos",
+                "Limpieza de baños"
             ]
         },
-        "usos_comunes": [
-            "Limpieza de encimeras",
-            "Desinfectante de frutas",
-            "Eliminador de cal en electrodomésticos"
-        ]
-    },
-    {
-        "id": "ing_032",
-        "nombres": [
-            "Perborato de Sodio",
-            "Perborato"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Oxidante alcalino. Blanquea y desinfecta en agua caliente.",
-        "ph": "Alcalino (9-10)",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "No, pero puede irritar piel sensible.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - reduce liberación de oxígeno)"
+        {
+            "id": "ing_031",
+            "nombres": [
+                "Ácido Acético Glacial",
+                "Vinagre Concentrado"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Ácido fuerte corrosivo. Descalcifica y elimina residuos ácidos.",
+            "ph": "Muy Ácido (1-2)",
+            "seguridad": {
+                "toxicidad": "Media (corrosivo)",
+                "irritante": "Sí, piel y ojos; diluir.",
+                "incompatible_con": [
+                    "ing_016 (Bicarbonato de Sodio - genera gas CO2)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de encimeras",
+                "Desinfectante de frutas",
+                "Eliminador de cal en electrodomésticos"
             ]
         },
-        "usos_comunes": [
-            "Detergentes en polvo",
-            "Blanqueador de ropa",
-            "Limpieza de dentaduras"
-        ]
-    },
-    {
-        "id": "ing_033",
-        "nombres": [
-            "Silicato de Sodio",
-            "Vidrio Líquido"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Sal alcalina adhesiva. Endurece superficies y emulsiona grasas.",
-        "ph": "Alcalino (11-12)",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "Sí, piel; usar diluido.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - precipita)"
+        {
+            "id": "ing_032",
+            "nombres": [
+                "Perborato de Sodio",
+                "Perborato"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Oxidante alcalino. Blanquea y desinfecta en agua caliente.",
+            "ph": "Alcalino (9-10)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "No, pero puede irritar piel sensible.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - reduce liberación de oxígeno)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes en polvo",
+                "Blanqueador de ropa",
+                "Limpieza de dentaduras"
             ]
         },
-        "usos_comunes": [
-            "Detergentes industriales",
-            "Limpieza de metales",
-            "Estabilizador en jabones"
-        ]
-    },
-    {
-        "id": "ing_034",
-        "nombres": [
-            "Cloruro de Benzalconio",
-            "BAC"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Desinfectante catiónico. Mata bacterias y hongos en superficies.",
-        "ph": "Neutro",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "Mínimo; no tóxico para la piel.",
-            "incompatible_con": []
-        },
-        "usos_comunes": [
-            "Desinfectantes hospitalarios",
-            "Limpieza de baños",
-            "Antiséptico en productos"
-        ]
-    },
-    {
-        "id": "ing_035",
-        "nombres": [
-            "Ácido Fosfórico",
-            "Fosfórico"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Ácido moderado corrosivo. Descalcifica y elimina óxido.",
-        "ph": "Ácido (1-2)",
-        "seguridad": {
-            "toxicidad": "Media",
-            "irritante": "Sí, piel y ojos; diluir.",
-            "incompatible_con": [
-                "ing_016 (Bicarbonato de Sodio - genera gas)"
+        {
+            "id": "ing_033",
+            "nombres": [
+                "Silicato de Sodio",
+                "Vidrio Líquido"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Sal alcalina adhesiva. Endurece superficies y emulsiona grasas.",
+            "ph": "Alcalino (11-12)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Sí, piel; usar diluido.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - precipita)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes industriales",
+                "Limpieza de metales",
+                "Estabilizador en jabones"
             ]
         },
-        "usos_comunes": [
-            "Limpieza de motores",
-            "Descalcificador de WC",
-            "Tratamiento de metales"
-        ]
-    },
-    {
-        "id": "ing_036",
-        "nombres": [
-            "Lauril Sulfato de Amonio",
-            "ALS"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Surfactante biodegradable espumante. Elimina grasa en agua dura.",
-        "ph": "Neutro",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "Menos que SLS; diluir.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - reduce eficacia)"
+        {
+            "id": "ing_034",
+            "nombres": [
+                "Cloruro de Benzalconio",
+                "BAC"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Desinfectante catiónico. Mata bacterias y hongos en superficies.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Mínimo; no tóxico para la piel.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Desinfectantes hospitalarios",
+                "Limpieza de baños",
+                "Antiséptico en productos"
             ]
         },
-        "usos_comunes": [
-            "Detergentes ecológicos",
-            "Limpieza de alfombras",
-            "Champús biodegradables"
-        ]
-    },
-    {
-        "id": "ing_037",
-        "nombres": [
-            "Hidróxido de Potasio",
-            "Potasa Cáustica"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Base fuerte corrosiva. Desengrasa y saponifica en jabones.",
-        "ph": "Muy Alcalino (13-14)",
-        "seguridad": {
-            "toxicidad": "Alta (corrosivo)",
-            "irritante": "Sí, piel y ojos; protección necesaria.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - reacción violenta)",
-                "ing_025 (Limón - neutraliza)"
+        {
+            "id": "ing_035",
+            "nombres": [
+                "Ácido Fosfórico",
+                "Fosfórico"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Ácido moderado corrosivo. Descalcifica y elimina óxido.",
+            "ph": "Ácido (1-2)",
+            "seguridad": {
+                "toxicidad": "Media",
+                "irritante": "Sí, piel y ojos; diluir.",
+                "incompatible_con": [
+                    "ing_016 (Bicarbonato de Sodio - genera gas)"
+                ]
+            },
+            "usos_comunes": [
+                "Limpieza de motores",
+                "Descalcificador de WC",
+                "Tratamiento de metales"
             ]
         },
-        "usos_comunes": [
-            "Fabricación de jabones líquidos",
-            "Desatascadores",
-            "Limpieza de grasa industrial"
-        ]
-    },
-    {
-        "id": "ing_038",
-        "nombres": [
-            "Tetraborato de Sodio",
-            "Bórax Pentahidratado"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Sal alcalina blanqueadora. Endurece jabones y controla pH.",
-        "ph": "Alcalino (9)",
-        "seguridad": {
-            "toxicidad": "Baja",
-            "irritante": "Mínimo; no ingerir.",
-            "incompatible_con": [
-                "ing_014 (Ácido Cítrico - precipita)"
+        {
+            "id": "ing_036",
+            "nombres": [
+                "Lauril Sulfato de Amonio",
+                "ALS"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Surfactante biodegradable espumante. Elimina grasa en agua dura.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Menos que SLS; diluir.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - reduce eficacia)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes ecológicos",
+                "Limpieza de alfombras",
+                "Champús biodegradables"
             ]
         },
-        "usos_comunes": [
-            "Detergentes en polvo",
-            "Limpieza de joyas",
-            "Conservante en productos"
-        ]
-    },
-    {
-        "id": "ing_039",
-        "nombres": [
-            "Etilenglicol Monobutil Éter",
-            "Butyl Cellosolve"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Solvente orgánico. Disuelve grasas y pinturas.",
-        "ph": "Neutro",
-        "seguridad": {
-            "toxicidad": "Media (tóxico por inhalación)",
-            "irritante": "Sí, piel y ojos; ventilación.",
-            "incompatible_con": []
+        {
+            "id": "ing_037",
+            "nombres": [
+                "Hidróxido de Potasio",
+                "Potasa Cáustica"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Base fuerte corrosiva. Desengrasa y saponifica en jabones.",
+            "ph": "Muy Alcalino (13-14)",
+            "seguridad": {
+                "toxicidad": "Alta (corrosivo)",
+                "irritante": "Sí, piel y ojos; protección necesaria.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - reacción violenta)",
+                    "ing_025 (Limón - neutraliza)"
+                ]
+            },
+            "usos_comunes": [
+                "Fabricación de jabones líquidos",
+                "Desatascadores",
+                "Limpieza de grasa industrial"
+            ]
         },
-        "usos_comunes": [
-            "Quitapinturas",
-            "Limpieza de motores",
-            "Disolvente industrial"
-        ]
-    },
-    {
-        "id": "ing_040",
-        "nombres": [
-            "Cloruro de Metileno",
-            "Diclorometano"
-        ],
-        "categoria": "Limpieza",
-        "descripcion": "Solvente volátil. Elimina adhesivos y manchas difíciles.",
-        "ph": "Neutro",
-        "seguridad": {
-            "toxicidad": "Alta (carcinógeno sospechoso)",
-            "irritante": "Sí, vías respiratorias; usar con precaución extrema.",
-            "incompatible_con": []
+        {
+            "id": "ing_038",
+            "nombres": [
+                "Tetraborato de Sodio",
+                "Bórax Pentahidratado"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Sal alcalina blanqueadora. Endurece jabones y controla pH.",
+            "ph": "Alcalino (9)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Mínimo; no ingerir.",
+                "incompatible_con": [
+                    "ing_014 (Ácido Cítrico - precipita)"
+                ]
+            },
+            "usos_comunes": [
+                "Detergentes en polvo",
+                "Limpieza de joyas",
+                "Conservante en productos"
+            ]
         },
-        "usos_comunes": [
-            "Quitapinturas",
-            "Limpieza de metales",
-            "Desengrasante de precisión"
-        ]
-    }
-
-
-
+        {
+            "id": "ing_039",
+            "nombres": [
+                "Etilenglicol Monobutil Éter",
+                "Butyl Cellosolve"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Solvente orgánico. Disuelve grasas y pinturas.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Media (tóxico por inhalación)",
+                "irritante": "Sí, piel y ojos; ventilación.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Quitapinturas",
+                "Limpieza de motores",
+                "Disolvente industrial"
+            ]
+        },
+        {
+            "id": "ing_040",
+            "nombres": [
+                "Cloruro de Metileno",
+                "Diclorometano"
+            ],
+            "categoria": "Limpieza",
+            "descripcion": "Solvente volátil. Elimina adhesivos y manchas difíciles.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Alta (carcinógeno sospechoso)",
+                "irritante": "Sí, vías respiratorias; usar con precaución extrema.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Quitapinturas",
+                "Limpieza de metales",
+                "Desengrasante de precisión"
+            ]
+        },
+        {
+            "id": "ing_044",
+            "nombres": [
+                "Parabenos",
+                "Metilparabeno",
+                "Propilparabeno"
+            ],
+            "categoria": "Conservante Cosmético",
+            "descripcion": "Conservantes antimicrobianos comunes.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Controvertida (Disruptor endocrino potencial)",
+                "irritante": "Baja",
+                "advertencia_critica": "Evitar en productos para bebés o piel sensible si se desea precaución.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Champús",
+                "Cremas"
+            ]
+        },
+        {
+            "id": "ing_045",
+            "nombres": [
+                "Ftalatos",
+                "DBP",
+                "DEP"
+            ],
+            "categoria": "Aditivo Industrial",
+            "descripcion": "Plastificantes y fijadores de fragancia.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Alta (Toxicidad reproductiva)",
+                "irritante": "No",
+                "advertencia_critica": "Vinculados a disrupción hormonal.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Perfumes sintéticos",
+                "Esmaltes de uñas"
+            ]
+        },
+        {
+            "id": "ing_046",
+            "nombres": [
+                "Formaldehído",
+                "DMDM Hydantoin"
+            ],
+            "categoria": "Conservante",
+            "descripcion": "Gas conservante potente y carcinógeno.",
+            "ph": "Acido",
+            "seguridad": {
+                "toxicidad": "Muy Alta (Carcinógeno Grupo 1 IARC)",
+                "irritante": "Muy Alto (Sensibilizante)",
+                "advertencia_critica": "EVITAR ROTUNDAMENTE. Presente en alisados de cabello.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Alisados de keratina",
+                "Conservante industrial"
+            ]
+        },
+        {
+            "id": "ing_047",
+            "nombres": [
+                "Triclosán"
+            ],
+            "categoria": "Antibacteriano",
+            "descripcion": "Agente antimicrobiano de amplio espectro.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Media (Disruptor endocrino, Contaminante ambiental)",
+                "irritante": "Media",
+                "advertencia_critica": "Prohibido en jabones de manos en EE.UU. por la FDA.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Pasta de dientes",
+                "Jabones antibacterianos antiguos"
+            ]
+        },
+        {
+            "id": "ing_048",
+            "nombres": [
+                "Aceite Esencial de Poleo",
+                "Pennyroyal Oil"
+            ],
+            "categoria": "Aceite Esencial",
+            "descripcion": "Aceite derivado de Mentha pulegium.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "EXTREMA (Hepatotóxico)",
+                "irritante": "Alta",
+                "advertencia_critica": "MORTAL para Perros y Gatos (Fallo hepático fulminante). Abortivo en humanos.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Insecticida natural (No recomendado)"
+            ]
+        },
+        {
+            "id": "ing_049",
+            "nombres": [
+                "Aceite Esencial de Gaulteria",
+                "Wintergreen Oil"
+            ],
+            "categoria": "Aceite Esencial",
+            "descripcion": "Aceite rico en salicilato de metilo (aspirina líquida).",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Alta (Salicilatos)",
+                "irritante": "Media",
+                "advertencia_critica": "TÓXICO para Gatos (Fallo renal). Peligroso en niños.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Pomadas para dolor muscular"
+            ]
+        },
+        {
+            "id": "ing_050",
+            "nombres": [
+                "Aceite Esencial de Pino",
+                "Aceite de Eucalipto"
+            ],
+            "categoria": "Aceite Esencial",
+            "descripcion": "Aceites ricos en fenoles y terpenos.",
+            "ph": "Neutro",
+            "seguridad": {
+                "toxicidad": "Media (Humanos) / Alta (Gatos)",
+                "irritante": "Media",
+                "advertencia_critica": "TÓXICO para Gatos (No metabolizan fenoles). Evitar difusores cerca de ellos.",
+                "incompatible_con": []
+            },
+            "usos_comunes": [
+                "Limpiadores de piso",
+                "Descongestionantes"
+            ]
+        },
+        {
+            "id": "ing_041",
+            "nombres": [
+                "Retinol",
+                "Vitamina A"
+            ],
+            "categoria": "Cosmética Avanzada",
+            "descripcion": "Estimulante de renovación celular y producción de colágeno.",
+            "ph": "5.0-6.0",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Sí, puede causar dermatitis y descamación.",
+                "advertencia_critica": "No usar en embarazo. Fotosensible (usar de noche).",
+                "incompatible_con": [
+                    "ing_042 (Vitamina C - Incompatibilidad pH)",
+                    "ing_043 (AHAs - Irritación excesiva)"
+                ]
+            },
+            "usos_comunes": [
+                "Antiarrugas",
+                "Tratamiento acné",
+                "Manchas"
+            ]
+        },
+        {
+            "id": "ing_042",
+            "nombres": [
+                "Vitamina C",
+                "Ácido L-Ascórbico"
+            ],
+            "categoria": "Cosmética Avanzada",
+            "descripcion": "Antioxidante potente. Ilumina la piel y protege del daño solar.",
+            "ph": "Ácido (2.5-3.5)",
+            "seguridad": {
+                "toxicidad": "Nula",
+                "irritante": "Puede picar en piel sensible.",
+                "incompatible_con": [
+                    "ing_041 (Retinol - Incompatibilidad pH)",
+                    "ing_006 (Alcohol - puede aumentar irritación)"
+                ]
+            },
+            "usos_comunes": [
+                "Serum iluminador",
+                "Antioxidante de día"
+            ]
+        },
+        {
+            "id": "ing_043",
+            "nombres": [
+                "Ácido Glicólico",
+                "AHA"
+            ],
+            "categoria": "Cosmética Avanzada",
+            "descripcion": "Exfoliante químico derivado de la caña de azúcar.",
+            "ph": "Ácido (3-4)",
+            "seguridad": {
+                "toxicidad": "Baja",
+                "irritante": "Sí, si se excede el uso.",
+                "advertencia_critica": "Fotosensibilizante: USAR PROTECTOR SOLAR OBLIGATORIO.",
+                "incompatible_con": [
+                    "ing_041 (Retinol)"
+                ]
+            },
+            "usos_comunes": [
+                "Exfoliación química",
+                "Tratamiento de manchas"
+            ]
+        }
     ],
     "recetas_sugeridas": [
         {
@@ -1153,75 +1357,72 @@
             "advertencias": "No usar más de 2-3 veces a la semana para evitar dañar el esmalte o la flora bucal. NO INGERIR.",
             "combinaciones_clave": "Propiedad oxidante de ing_005 para desinfección bucal con alta dilución."
         },
-
         {
-                    "id_receta": "rec_015",
-                    "nombre": "Limpiador Potente para Grasa y Azulejos",
-                    "categoria": "Limpieza",
-                    "ingredientes": [
-                        {
-                            "id": "ing_004",
-                            "cantidad": "1/4 taza"
-                        },
-                        {
-                            "id": "ing_009",
-                            "cantidad": "1 cucharada"
-                        },
-                        {
-                            "id": "agua",
-                            "cantidad": "1 litro"
-                        }
-                    ],
-                    "instrucciones": "Diluir el Amoníaco y el Jabón de Castilla en el agua. El jabón actúa como emulsionante para el amoníaco. Usar con un paño o esponja en superficies grasientas, cocina o azulejos. Enjuagar bien.",
-                    "advertencias": "¡CRÍTICO! Usar guantes y garantizar una excelente ventilación. NUNCA mezclar ni usar cerca de Lejía (ing_003) o Vinagre (ing_001).",
-                    "combinaciones_clave": "El Amoníaco (ing_004) es un desengrasante muy fuerte. El Jabón (ing_009) ayuda a cortar la grasa disuelta."
+            "id_receta": "rec_015",
+            "nombre": "Limpiador Potente para Grasa y Azulejos",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_004",
+                    "cantidad": "1/4 taza"
                 },
                 {
-                    "id_receta": "rec_016",
-                    "nombre": "acondicionador de cabello con brillo",
-                    "categoria": "Cuidado Personal",
-                    "ingredientes": [
-                        {
-                            "id": "ing_001",
-                            "cantidad": "1 cucharada"
-                        },
-                        {
-                            "id": "ing_012",
-                            "cantidad": "1/2 cucharadita"
-                        },
-                        {
-                            "id": "agua",
-                            "cantidad": "1 taza"
-                        }
-                    ],
-                    "instrucciones": "Mezclar el vinagre (para cerrar la cutícula y dar brillo), la glicerina (como humectante) y el agua. Después del champú, verter sobre el cabello y cuero cabelludo. Dejar actuar 2 minutos y enjuagar (el olor a vinagre se irá al secarse).",
-                    "advertencias": "No usar si tienes el cuero cabelludo irritado o con heridas. Si entra en los ojos, enjuagar inmediatamente con abundante agua.",
-                    "combinaciones_clave": "El Vinagre (ing_001) equilibra el pH. La Glicerina (ing_012) hidrata."
+                    "id": "ing_009",
+                    "cantidad": "1 cucharada"
                 },
                 {
-                    "id_receta": "rec_017",
-                    "nombre": "Crema Limpiadora Abrasiva Suave",
-                    "categoria": "Limpieza",
-                    "ingredientes": [
-                        {
-                            "id": "ing_002",
-                            "cantidad": "2 partes"
-                        },
-                        {
-                            "id": "ing_009",
-                            "cantidad": "1 parte"
-                        },
-                        {
-                            "id": "ing_007",
-                            "cantidad": "Suficiente para textura de crema"
-                        }
-                    ],
-                    "instrucciones": "Mezclar el Bicarbonato (ing_002) y el Jabón de Castilla (ing_009). Añadir Jugo de Limón (ing_007) poco a poco hasta obtener una pasta cremosa. Aplicar con una esponja suave y frotar encimeras, fregaderos o bañeras. Enjuagar.",
-                    "advertencias": "Aunque la reacción principal entre el bicarbonato (base) y el limón (ácido) ya habrá ocurrido en la mezcla, no debe usarse en superficies porosas como el mármol (el ácido las puede dañar).",
-                    "combinaciones_clave": "El Bicarbonato (ing_002) es abrasivo suave, el Jabón (ing_009) disuelve grasa, y el Limón (ing_007) aporta antical y aroma."
+                    "id": "agua",
+                    "cantidad": "1 litro"
+                }
+            ],
+            "instrucciones": "Diluir el Amoníaco y el Jabón de Castilla en el agua. El jabón actúa como emulsionante para el amoníaco. Usar con un paño o esponja en superficies grasientas, cocina o azulejos. Enjuagar bien.",
+            "advertencias": "¡CRÍTICO! Usar guantes y garantizar una excelente ventilación. NUNCA mezclar ni usar cerca de Lejía (ing_003) o Vinagre (ing_001).",
+            "combinaciones_clave": "El Amoníaco (ing_004) es un desengrasante muy fuerte. El Jabón (ing_009) ayuda a cortar la grasa disuelta."
+        },
+        {
+            "id_receta": "rec_016",
+            "nombre": "acondicionador de cabello con brillo",
+            "categoria": "Cuidado Personal",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "1 cucharada"
+                },
+                {
+                    "id": "ing_012",
+                    "cantidad": "1/2 cucharadita"
+                },
+                {
+                    "id": "agua",
+                    "cantidad": "1 taza"
+                }
+            ],
+            "instrucciones": "Mezclar el vinagre (para cerrar la cutícula y dar brillo), la glicerina (como humectante) y el agua. Después del champú, verter sobre el cabello y cuero cabelludo. Dejar actuar 2 minutos y enjuagar (el olor a vinagre se irá al secarse).",
+            "advertencias": "No usar si tienes el cuero cabelludo irritado o con heridas. Si entra en los ojos, enjuagar inmediatamente con abundante agua.",
+            "combinaciones_clave": "El Vinagre (ing_001) equilibra el pH. La Glicerina (ing_012) hidrata."
+        },
+        {
+            "id_receta": "rec_017",
+            "nombre": "Crema Limpiadora Abrasiva Suave",
+            "categoria": "Limpieza",
+            "ingredientes": [
+                {
+                    "id": "ing_002",
+                    "cantidad": "2 partes"
+                },
+                {
+                    "id": "ing_009",
+                    "cantidad": "1 parte"
+                },
+                {
+                    "id": "ing_007",
+                    "cantidad": "Suficiente para textura de crema"
+                }
+            ],
+            "instrucciones": "Mezclar el Bicarbonato (ing_002) y el Jabón de Castilla (ing_009). Añadir Jugo de Limón (ing_007) poco a poco hasta obtener una pasta cremosa. Aplicar con una esponja suave y frotar encimeras, fregaderos o bañeras. Enjuagar.",
+            "advertencias": "Aunque la reacción principal entre el bicarbonato (base) y el limón (ácido) ya habrá ocurrido en la mezcla, no debe usarse en superficies porosas como el mármol (el ácido las puede dañar).",
+            "combinaciones_clave": "El Bicarbonato (ing_002) es abrasivo suave, el Jabón (ing_009) disuelve grasa, y el Limón (ing_007) aporta antical y aroma."
         }
-
-
     ],
     "reglas_prohibidas_guardrails": [
         {
@@ -1260,55 +1461,25 @@
             "mensaje_usuario": "Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva)."
         },
         {
-            "ingrediente_A": "ing_003",
-            "ingrediente_B": "ing_004",
-            "resultado": "Gas Cloramina",
-            "peligro": "MORTAL. Daño pulmonar severo.",
-            "mensaje_usuario": "¡PELIGRO EXTREMO! Estás intentando mezclar Lejía y Amoníaco. Esto crea vapores tóxicos que pueden matarte. NUNCA hagas esto."
+            "ingrediente_A": "ing_041",
+            "ingrediente_B": "ing_042",
+            "resultado": "Inactivación / Irritación",
+            "peligro": "Antagonismo de pH. Aumenta riesgo de irritación.",
+            "mensaje_usuario": "Evita mezclar Retinol y Vitamina C en la misma rutina. Usa Vitamina C de día y Retinol de noche."
         },
         {
-            "ingrediente_A": "ing_003",
-            "ingrediente_B": "ing_001",
-            "resultado": "Gas Cloro",
-            "peligro": "Alta toxicidad. Quemaduras químicas en pulmones.",
-            "mensaje_usuario": "¡ALTO! No mezcles Lejía con Vinagre (ni ningún ácido). Libera gas cloro, que es altamente venenoso."
+            "ingrediente_A": "ing_041",
+            "ingrediente_B": "ing_043",
+            "resultado": "Irritación Severa",
+            "peligro": "Daño a la barrera cutánea.",
+            "mensaje_usuario": "No uses Retinol y Ácidos Exfoliantes (AHA/BHA) al mismo tiempo. Alterna las noches de uso."
         },
         {
-            "ingrediente_A": "ing_003",
-            "ingrediente_B": "ing_014",
-            "resultado": "Gas Cloro",
-            "peligro": "Alta toxicidad. Idéntico a mezclar con vinagre pero más rápido por la concentración.",
-            "mensaje_usuario": "¡PELIGRO! El Ácido Cítrico es muy fuerte y mezclado con Lejía libera gas cloro inmediatamente."
-        },
-        {
-            "ingrediente_A": "ing_005",
-            "ingrediente_B": "ing_001",
-            "resultado": "Ácido Peracético",
-            "peligro": "Corrosivo e irritante.",
-            "mensaje_usuario": "No mezcles Agua Oxigenada con Vinagre en el mismo envase. Crea un ácido corrosivo que puede dañar tu piel y pulmones."
-        },
-        {
-            "ingrediente_A": "ing_010",
-            "ingrediente_B": "PIEL_DIRECTA",
-            "resultado": "Quemadura química / Sensibilización",
-            "peligro": "Irritación severa.",
-            "mensaje_usuario": "Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva)."
-        },
-        {
-            "ingrediente_A": "ing_009",
-            "ingrediente_B": "ing_001",
-            "resultado": "Precipitación/Neutralización",
-            "peligro": "Disminución de eficacia. Creación de residuos sólidos (nata de jabón).",
-            "mensaje_usuario": "No mezcles Jabón de Castilla (ing_009) directamente con Vinagre (ing_001). El ácido neutraliza el jabón, reduciendo su eficacia limpiadora y dejando un residuo blanco (precipitado)."
-        },
-        {
-            "ingrediente_A": "ing_005",
-            "ingrediente_B": "LUZ_SOLAR/CALOR",
-            "resultado": "Descomposición Rápida",
-            "peligro": "Pérdida de la capacidad desinfectante.",
-            "mensaje_usuario": "El Agua Oxigenada (ing_005) se descompone rápidamente con la luz y el calor. Debe almacenarse en envases opacos y fríos para mantener su poder desinfectante."
+            "ingrediente_A": "ing_001",
+            "ingrediente_B": "ing_002",
+            "resultado": "Neutralización Ineficaz",
+            "peligro": "Pérdida de propiedades de limpieza. Genera sal y agua.",
+            "mensaje_usuario": "Mezclar Vinagre y Bicarbonato anula sus efectos de limpieza. Úsalos por separado o solo si buscas la acción mecánica de la espuma momentánea."
         }
-
-
     ]
 }

@@ -8,7 +8,7 @@ Asistente inteligente especializado en productos químicos domésticos, desarrol
 - **Base de Conocimientos**: Amplia base de datos con ingredientes químicos, recetas y reglas de seguridad
 - **Interfaz de Chat**: Interfaz web moderna con historial de conversaciones
 - **IA Local**: Utiliza Ollama con LLaMA para respuestas precisas y privadas
-- **Persistencia**: Las conversaciones se guardan automáticamente en el navegador (Proximamente)
+- **Persistencia**: Las conversaciones se guardan automáticamente en el navegador
 
 ## 🚀 Instalación
 

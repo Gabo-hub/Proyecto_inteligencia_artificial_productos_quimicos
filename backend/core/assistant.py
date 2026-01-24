@@ -67,7 +67,7 @@ class ChemicalAssistant:
                 self.vector_db.save_local(self.config.VECTOR_STORE_PATH)
                 logger.info("✅ Vector store creado y guardado en caché.")
             
-            retriever = self.vector_db.as_retriever()
+            retriever = self.vector_db.as_retriever(search_kwargs={"k": 8})
         else:
             self.vector_db = None
             retriever = None

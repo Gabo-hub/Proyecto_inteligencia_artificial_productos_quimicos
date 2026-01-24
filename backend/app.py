@@ -48,7 +48,6 @@ def create_app(config: AppConfig = None) -> Flask:
         raise
     
     # Crear aplicación Flask
-    # Usar rutas absolutas para templates y static
     backend_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(backend_dir)
     template_folder = os.path.join(project_root, 'frontend', 'templates')

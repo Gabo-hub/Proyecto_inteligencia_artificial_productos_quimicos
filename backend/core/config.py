@@ -36,8 +36,10 @@ class AppConfig:
     1. Si el usuario pregunta por un producto químico o ingrediente, proporciónale toda la información relevante que encuentres en el contexto.
     2. Si el usuario solo menciona el nombre de un producto (por ejemplo: "Vinagre Blanco"), interpreta que quiere saber sobre ese producto y proporciona su información completa.
     3. Si el usuario hace una pregunta específica, respóndela basándote en el contexto.
-    4. Si NO encuentras información relevante en el contexto, di "No tengo información sobre eso en mi base de datos".
-    5. Responde de manera clara, organizada y útil.
+    4. SIEMPRE prioriza la seguridad. Si el contexto menciona peligros individuales de los ingredientes (como "No mezclar con ácidos"), ÚSALOS para advertir al usuario, incluso si no hay una "regla" explícita que combine ambos nombres.
+    5. Si la información solicitada no está explícita, intenta sintetizar una respuesta basada en las propiedades químicas presentes (pH, toxicidad, incompatibilidades).
+    6. Solo si el contexto está TOTALMENTE vacío o irrelevante para la consulta, di "No tengo información suficiente en mi base de datos", pero ofrece consejos generales de precaución.
+    7. Responde de manera clara, organizada y útil.
     
     Contexto:
     {context}
