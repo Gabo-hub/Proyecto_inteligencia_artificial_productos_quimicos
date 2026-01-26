@@ -2,56 +2,90 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuimicAI</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuimicAI</title>
+<!-- Fuente Poppins para un look más moderno -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Iconos Font Awesome para la tuerca de configuración -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
-    <div class="app-container">
+<div class="app-container">
 
-        <!-- PANEL HISTORIAL -->
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h2>Historial</h2>
-                <button id="newChatBtn" class="add-btn">+</button>
-            </div>
+<!-- PANEL HISTORIAL -->
+<aside class="sidebar">
+<div class="sidebar-header">
+<h2>Historial</h2>
+<button id="newChatBtn" class="add-btn">+</button>
+</div>
 
-            <ul id="historyList" class="history-list">
-                <!-- Se llenará con JS -->
-            </ul>
-        </aside>
+<ul id="historyList" class="history-list">
 
-        <!-- ÁREA PRINCIPAL DEL CHAT -->
-        <main class="chat-section">
+ </ul>
+</aside>
 
-            <!-- ENCABEZADO -->
-            <div class="chat-header">
-                <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo QuimicAI" />
-                <div class="title">
-                    <h1>QuimicAI</h1>
-                    <span class="status">en línea</span>
-                </div>
-            </div>
+<!-- ÁREA PRINCIPAL DEL CHAT -->
+<main class="chat-section">
 
-            <!-- MENSAJES -->
-            <div id="chatBox" class="chat-box">
-                <!-- Burbujas aparecerán aquí -->
-            </div>
+<!-- ENCABEZADO -->
+<div class="chat-header">
+<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo QuimicAI" />
+<div class="title">
+<h1>QuimicAI</h1>
+<!-- Agregado id para manejar el estado desde JS -->
+<span id="statusLabel" class="status">en línea</span>
+</div>
+                
+<!-- BOTÓN Y MENÚ DE CONFIGURACIÓN -->
+<div class="settings-container">
+<button class="settings-btn" id="settingsBtn">
+<i class="fa-solid fa-gear"></i>
+</button>
+                    
+<!-- Menú desplegable oculto por defecto -->
+<div class="settings-menu" id="settingsMenu">
+<h3>Configuración</h3>
+<div class="menu-item">
+<span>Modo Oscuro</span>
+<!-- Interruptor de tema -->
+<label class="switch">
+<input type="checkbox" id="themeToggle" checked>
+<span class="slider"></span>
+</label>
+</div>
+</div>
+</div>
+</div>
 
-            <!-- BARRA PARA ENVIAR MENSAJES -->
-            <div class="chat-input">
-                <input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
-                <button id="sendBtn" class="send-btn">➤</button>
-            </div>
+ <!-- ÁREA DE MENSAJES -->
+<div id="chatBox" class="chat-box">
+<!-- Pantalla de bienvenida estilo Copilot -->
+<div id="welcomeScreen" class="welcome-screen">
+<div class="welcome-icon">⚗️</div>
+<h2>¿Cómo puedo ayudarte hoy?</h2>
+<p id="welcomeData">Cargando dato curioso...</p>
+<div class="welcome-suggestions">
+<span>Intenta preguntar por: "Limpiador multiusos" o "Soluciones 0.1M"</span>
+</div>
+</div>
+<!-- Burbujas aparecerán aquí mediante JS -->
+</div>
 
-        </main>
+<!-- BARRA PARA ENVIAR MENSAJES -->
+<div class="chat-input">
+<input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
+<button id="sendBtn" class="send-btn">➤</button>
+</div>
 
-    </div>
+</main>
 
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</div>
+
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 
 </html>
