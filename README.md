@@ -18,7 +18,7 @@ Asistente inteligente especializado en productos químicos domésticos, desarrol
 2. **Ollama** instalado y corriendo ([instalar Ollama](https://ollama.ai))
 3. **Modelo LLaMA**:
    ```bash
-   ollama pull llama3.2:3b
+   ollama pull llama3.1:8b
    ```
 
 ### Pasos de Instalación

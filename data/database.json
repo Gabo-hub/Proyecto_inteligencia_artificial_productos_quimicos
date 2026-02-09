@@ -1422,64 +1422,1800 @@
             "instrucciones": "Mezclar el Bicarbonato (ing_002) y el Jabón de Castilla (ing_009). Añadir Jugo de Limón (ing_007) poco a poco hasta obtener una pasta cremosa. Aplicar con una esponja suave y frotar encimeras, fregaderos o bañeras. Enjuagar.",
             "advertencias": "Aunque la reacción principal entre el bicarbonato (base) y el limón (ácido) ya habrá ocurrido en la mezcla, no debe usarse en superficies porosas como el mármol (el ácido las puede dañar).",
             "combinaciones_clave": "El Bicarbonato (ing_002) es abrasivo suave, el Jabón (ing_009) disuelve grasa, y el Limón (ing_007) aporta antical y aroma."
+        },
+        {
+            "id_receta": "elem_001",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_002",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_003",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_004",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_005",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_006",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_007",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_008",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_009",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_010",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_011",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_012",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_013",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_014",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_015",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_016",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_017",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_018",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_019",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_020",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_021",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_022",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_023",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_024",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_025",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_026",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_027",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_028",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_029",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_030",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_031",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_032",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_033",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_034",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_035",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_036",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_037",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_038",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_039",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_040",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_041",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_042",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_043",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_044",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_045",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_046",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_047",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_048",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_049",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_050",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_051",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_052",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_053",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_054",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_055",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_056",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_057",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_058",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_059",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "elem_060",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_001",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_002",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_003",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_004",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_005",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_006",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_007",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_008",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_009",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_010",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_011",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_012",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_013",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_014",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_015",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_016",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_017",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_018",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_019",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_020",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_021",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_022",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_023",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_024",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_025",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_026",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_027",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_028",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_029",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_030",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_031",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_032",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_033",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_034",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_035",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_036",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_037",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_038",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_039",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_040",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_041",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_042",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_043",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_044",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_045",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_046",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_047",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_048",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_049",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_050",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_051",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_052",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_053",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_054",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_055",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_056",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_057",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_058",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_059",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_060",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_061",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_062",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_063",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
+        },
+        {
+            "id_receta": "train_064",
+            "nombre": "Sin nombre",
+            "categoria": "General",
+            "ingredientes": [
+                {
+                    "id": "ing_001",
+                    "cantidad": "Al gusto"
+                }
+            ],
+            "instrucciones": "",
+            "advertencias": "",
+            "combinaciones_clave": "Basado en: "
         }
     ],
     "reglas_prohibidas_guardrails": [
         {
             "ingrediente_A": "ing_003",
-            "ingrediente_B": "ing_004",
-            "resultado": "Gas Cloramina",
-            "peligro": "MORTAL. Daño pulmonar severo.",
-            "mensaje_usuario": "¡PELIGRO EXTREMO! Estás intentando mezclar Lejía y Amoníaco. Esto crea vapores tóxicos que pueden matarte. NUNCA hagas esto."
-        },
-        {
-            "ingrediente_A": "ing_003",
-            "ingrediente_B": "ing_001",
-            "resultado": "Gas Cloro",
-            "peligro": "Alta toxicidad. Quemaduras químicas en pulmones.",
-            "mensaje_usuario": "¡ALTO! No mezcles Lejía con Vinagre (ni ningún ácido). Libera gas cloro, que es altamente venenoso."
-        },
-        {
-            "ingrediente_A": "ing_003",
             "ingrediente_B": "ing_014",
-            "resultado": "Gas Cloro",
+            "mensaje_usuario": "¡PELIGRO! El Ácido Cítrico es muy fuerte y mezclado con Lejía libera gas cloro inmediatamente.",
             "peligro": "Alta toxicidad. Idéntico a mezclar con vinagre pero más rápido por la concentración.",
-            "mensaje_usuario": "¡PELIGRO! El Ácido Cítrico es muy fuerte y mezclado con Lejía libera gas cloro inmediatamente."
-        },
-        {
-            "ingrediente_A": "ing_005",
-            "ingrediente_B": "ing_001",
-            "resultado": "Ácido Peracético",
-            "peligro": "Corrosivo e irritante.",
-            "mensaje_usuario": "No mezcles Agua Oxigenada con Vinagre en el mismo envase. Crea un ácido corrosivo que puede dañar tu piel y pulmones."
-        },
-        {
-            "ingrediente_A": "ing_010",
-            "ingrediente_B": "PIEL_DIRECTA",
-            "resultado": "Quemadura química / Sensibilización",
-            "peligro": "Irritación severa.",
-            "mensaje_usuario": "Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva)."
-        },
-        {
-            "ingrediente_A": "ing_041",
-            "ingrediente_B": "ing_042",
-            "resultado": "Inactivación / Irritación",
-            "peligro": "Antagonismo de pH. Aumenta riesgo de irritación.",
-            "mensaje_usuario": "Evita mezclar Retinol y Vitamina C en la misma rutina. Usa Vitamina C de día y Retinol de noche."
+            "resultado": "Gas Cloro"
         },
         {
             "ingrediente_A": "ing_041",
             "ingrediente_B": "ing_043",
-            "resultado": "Irritación Severa",
+            "mensaje_usuario": "No uses Retinol y Ácidos Exfoliantes (AHA/BHA) al mismo tiempo. Alterna las noches de uso.",
             "peligro": "Daño a la barrera cutánea.",
-            "mensaje_usuario": "No uses Retinol y Ácidos Exfoliantes (AHA/BHA) al mismo tiempo. Alterna las noches de uso."
+            "resultado": "Irritación Severa"
+        },
+        {
+            "ingrediente_A": "ing_041",
+            "ingrediente_B": "ing_042",
+            "mensaje_usuario": "Evita mezclar Retinol y Vitamina C en la misma rutina. Usa Vitamina C de día y Retinol de noche.",
+            "peligro": "Antagonismo de pH. Aumenta riesgo de irritación.",
+            "resultado": "Inactivación / Irritación"
+        },
+        {
+            "ingrediente_A": "ing_003",
+            "ingrediente_B": "ing_004",
+            "mensaje_usuario": "¡PELIGRO EXTREMO! Estás intentando mezclar Lejía y Amoníaco. Esto crea vapores tóxicos que pueden matarte. NUNCA hagas esto.",
+            "peligro": "MORTAL. Daño pulmonar severo.",
+            "resultado": "Gas Cloramina"
         },
         {
             "ingrediente_A": "ing_001",
             "ingrediente_B": "ing_002",
-            "resultado": "Neutralización Ineficaz",
+            "mensaje_usuario": "Mezclar Vinagre y Bicarbonato anula sus efectos de limpieza. Úsalos por separado o solo si buscas la acción mecánica de la espuma momentánea.",
             "peligro": "Pérdida de propiedades de limpieza. Genera sal y agua.",
-            "mensaje_usuario": "Mezclar Vinagre y Bicarbonato anula sus efectos de limpieza. Úsalos por separado o solo si buscas la acción mecánica de la espuma momentánea."
+            "resultado": "Neutralización Ineficaz"
+        },
+        {
+            "ingrediente_A": "ing_003",
+            "ingrediente_B": "ing_001",
+            "mensaje_usuario": "¡ALTO! No mezcles Lejía con Vinagre (ni ningún ácido). Libera gas cloro, que es altamente venenoso.",
+            "peligro": "Alta toxicidad. Quemaduras químicas en pulmones.",
+            "resultado": "Gas Cloro"
+        },
+        {
+            "ingrediente_A": "ing_005",
+            "ingrediente_B": "ing_001",
+            "mensaje_usuario": "No mezcles Agua Oxigenada con Vinagre en el mismo envase. Crea un ácido corrosivo que puede dañar tu piel y pulmones.",
+            "peligro": "Corrosivo e irritante.",
+            "resultado": "Ácido Peracético"
+        },
+        {
+            "ingrediente_A": "ing_010",
+            "ingrediente_B": "PIEL_DIRECTA",
+            "mensaje_usuario": "Nunca apliques Aceites Esenciales puros directamente sobre la piel. Siempre dilúyelos en un aceite portador (como coco u oliva).",
+            "peligro": "Irritación severa.",
+            "resultado": "Quemadura química / Sensibilización"
         }
     ]
 }

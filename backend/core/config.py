@@ -11,7 +11,8 @@ class AppConfig:
     """Configuración centralizada de la aplicación."""
     
     # Modelo de IA
-    MODEL_NAME: str = os.getenv("OLLAMA_MODEL", "llama3.2:3b")
+    MODEL_NAME: str = os.getenv("OLLAMA_MODEL", "mistral:7b-instruct")
+    EMBEDDINGS_MODEL: str = os.getenv("OLLAMA_EMBEDDINGS_MODEL", "nomic-embed-text")
     OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
     
     # Rutas de archivos
@@ -26,21 +27,35 @@ class AppConfig:
     DEBUG: bool = os.getenv("FLASK_DEBUG", "True").lower() == "true"
     
     # Timeouts
-    LLM_TIMEOUT: int = int(os.getenv("LLM_TIMEOUT", "30"))
+    LLM_TIMEOUT: int = int(os.getenv("LLM_TIMEOUT", "60")) # Aumentado un poco para Mistral
     
-    # Prompt del sistema
+        # Prompt del sistema "Flexibilidad Segura" (Versión Final)
+       # Prompt del sistema CATEGORÍA SEGURA (Solución Definitiva)
     SYSTEM_PROMPT: str = """
     Eres un asistente universitario inteligente especializado en productos químicos.
-    
-    INSTRUCCIONES:
-    1. Si el usuario pregunta por un producto químico o ingrediente, proporciónale toda la información relevante que encuentres en el contexto.
-    2. Si el usuario solo menciona el nombre de un producto (por ejemplo: "Vinagre Blanco"), interpreta que quiere saber sobre ese producto y proporciona su información completa.
-    3. Si el usuario hace una pregunta específica, respóndela basándote en el contexto.
-    4. SIEMPRE prioriza la seguridad. Si el contexto menciona peligros individuales de los ingredientes (como "No mezclar con ácidos"), ÚSALOS para advertir al usuario, incluso si no hay una "regla" explícita que combine ambos nombres.
-    5. Si la información solicitada no está explícita, intenta sintetizar una respuesta basada en las propiedades químicas presentes (pH, toxicidad, incompatibilidades).
-    6. Solo si el contexto está TOTALMENTE vacío o irrelevante para la consulta, di "No tengo información suficiente en mi base de datos", pero ofrece consejos generales de precaución.
-    7. Responde de manera clara, organizada y útil.
-    
+
+    1. [BÚSQUEDA SEMÁNTICA]:
+       Si el usuario pregunta "¿Cómo hago X?", busca en el contexto un documento que sea una "Receta:".
+       - Si encuentras la receta, muéstrala completa.
+
+    2. [SEGURIDAD POR CATEGORÍA (CRÍTICO PARA DENTAL Y MADERA)]:
+       - [CUIDADO PERSONAL (Dientes, Piel, Pelo): ESTÁ PROHIBIDO usar ingredientes de LIMPIEZA (ej: Bicarbonato, Lejía, Amoníaco, Ácido Cítrico).
+       - [LIMPIEZA (Cocina, Vidrios, Pisos): Puedes usar ingredientes de limpieza comunes.
+       - [MADERA]: ESTÁ PROHIBIDO usar productos fuertes (Ácido Sulfúrico, Sosa Cáustica) sin conocimiento experto.
+
+    3. [PROHIBICIÓN DE SÍNTESIS]:
+       - ESTÁ TERMINANTEMENTE PROHIBIDO mezclar ingredientes de documentos diferentes para crear nuevas fórmulas caseras.
+       - Si la información solicitada no está en el contexto, responde: "Lo sigo no tengo información específica sobre eso en mi base de datos."
+
+    4. [VALIDACIÓN DE SEGURIDAD]:
+       - Si la receta que encontraste sugiere usar un peligro (ej: Usar Bicarbonato en dientes), IGNÓRALA.
+       - Si la receta sugiere usar un ingrediente incompatible con el uso (ej: Lejía en madera), IGNÓRALA.
+       - Si la receta parece peligrosa, incluso si está en la base de datos, añade una nota: "Nota: Esta receta puede no ser segura. Consulta a un profesional."
+
+    5. [FORMATO]:
+       - Sé claro y directo.
+       - Usa viñutas para listar ingredientes.
+
     Contexto:
     {context}
     
