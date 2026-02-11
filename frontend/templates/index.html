@@ -5,18 +5,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuimicAI</title>
-<!-- Fuente Poppins para un look más moderno -->
+ <!-- Fuente Poppins para un look más moderno --> 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<!-- Iconos Font Awesome para la tuerca de configuración -->
+ <!-- Iconos Font Awesome para la tuerca de configuración --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
 
 <div class="app-container">
 
-<!-- PANEL HISTORIAL -->
+ <!-- PANEL HISTORIAL --> 
 <aside class="sidebar">
 <div class="sidebar-header">
 <h2>Historial</h2>
@@ -24,46 +24,56 @@
 </div>
 
 <ul id="historyList" class="history-list">
-
+     <!-- Las conversaciones se cargarán aquí --> 
  </ul>
 </aside>
 
-<!-- ÁREA PRINCIPAL DEL CHAT -->
+ <!-- ÁREA PRINCIPAL DEL CHAT --> 
 <main class="chat-section">
 
-<!-- ENCABEZADO -->
+ <!-- ENCABEZADO --> 
 <div class="chat-header">
-<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo QuimicAI" />
+<img src="../static/images/logo.png" class="logo" alt="Logo QuimicAI" />
 <div class="title">
 <h1>QuimicAI</h1>
-<!-- Agregado id para manejar el estado desde JS -->
+ <!-- Agregado id para manejar el estado desde JS --> 
 <span id="statusLabel" class="status">en línea</span>
 </div>
                 
-<!-- BOTÓN Y MENÚ DE CONFIGURACIÓN -->
+ <!-- BOTÓN Y MENÚ DE CONFIGURACIÓN --> 
 <div class="settings-container">
 <button class="settings-btn" id="settingsBtn">
 <i class="fa-solid fa-gear"></i>
 </button>
                     
-<!-- Menú desplegable oculto por defecto -->
+ <!-- Menú desplegable oculto por defecto --> 
 <div class="settings-menu" id="settingsMenu">
 <h3>Configuración</h3>
 <div class="menu-item">
 <span>Modo Oscuro</span>
-<!-- Interruptor de tema -->
+ <!-- Interruptor de tema --> 
 <label class="switch">
 <input type="checkbox" id="themeToggle" checked>
 <span class="slider"></span>
 </label>
 </div>
+<!-- configuración mascota -->
+ <div class="menu-item">
+        <span>Mascota Quimi</span>
+        <label class="switch">
+            <input type="checkbox" id="petToggle" checked>
+            <span class="slider"></span>
+        </label>
+    </div> 
+
+
 </div>
 </div>
 </div>
 
- <!-- ÁREA DE MENSAJES -->
+  <!-- ÁREA DE MENSAJES --> 
 <div id="chatBox" class="chat-box">
-<!-- Pantalla de bienvenida estilo Copilot -->
+ <!-- Pantalla de bienvenida --> 
 <div id="welcomeScreen" class="welcome-screen">
 <div class="welcome-icon">⚗️</div>
 <h2>¿Cómo puedo ayudarte hoy?</h2>
@@ -72,10 +82,19 @@
 <span>Intenta preguntar por: "Limpiador multiusos" o "Soluciones 0.1M"</span>
 </div>
 </div>
-<!-- Burbujas aparecerán aquí mediante JS -->
+ <!-- Burbujas aparecerán aquí mediante JS --> 
 </div>
 
-<!-- BARRA PARA ENVIAR MENSAJES -->
+ <!-- SECCIÓN MASCOTA INTERACTIVA (QUIMI) --> 
+<div id="ai-pet" class="pet-container">
+    <div id="pet-bubble" class="pet-bubble">¡Hola! Soy Quimi.</div>
+    <div class="pet-avatar">
+        <img src="../static/images/resuelto.png" id="pet-img" alt="Quimi" />
+    </div>
+    <div class="pet-shadow"></div> 
+</div>
+
+ <!-- BARRA PARA ENVIAR MENSAJES --> 
 <div class="chat-input">
 <input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
 <button id="sendBtn" class="send-btn">➤</button>
@@ -85,7 +104,33 @@
 
 </div>
 
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+ <!-- MODAL PARA EDITAR NOMBRE DE CONVERSACIÓN --> 
+<div id="editModal" class="modal-overlay">
+    <div class="modal-content">
+        <h3>Editar título</h3>
+        <input type="text" id="editChatInput" placeholder="Nuevo nombre..." />
+        <div class="modal-actions">
+            <button id="cancelEdit" class="modal-btn secondary">Cancelar</button>
+            <button id="saveEdit" class="modal-btn primary">Guardar</button>
+        </div>
+    </div>
+</div>
+
+ <!-- MODAL PARA CONFIRMAR ELIMINACIÓN --> 
+<div id="deleteModal" class="modal-overlay">
+    <div class="modal-content">
+        <div class="modal-icon-warning">⚠️</div>
+        <h3>¿Eliminar chat?</h3>
+        <p>Esta acción no se puede deshacer.</p>
+        <div class="modal-actions">
+            <button id="cancelDelete" class="modal-btn secondary">No, volver</button>
+            <button id="confirmDelete" class="modal-btn danger">Sí, eliminar</button>
+        </div>
+    </div>
+</div>
+
+ <!-- Script principal de la aplicación --> 
+<script src="../static/js/app.js"></script>
 </body>
 
 </html>
