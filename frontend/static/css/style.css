@@ -9,7 +9,16 @@
 body {
   background: #0b0e14; 
   color: #e2e8f0;
-  transition: background 0.3s ease; /* Suaviza el cambio de tema */
+  /* MEJORA: Transición suave para el cambio de tema */
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+              color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+              filter 0.5s ease;
+}
+
+/* EFECTO FANTÁSTICO DE DESTELLO AL CAMBIAR TEMA */
+body.theme-transitioning {
+  filter: brightness(1.2) contrast(1.1);
+  pointer-events: none;
 }
 
 .app-container {
@@ -27,6 +36,8 @@ body {
   flex-direction: column;
   border-right: 1px solid rgba(168, 85, 247, 0.1);
   overflow-x: hidden; 
+  /* MEJORA: Transición de color de fondo */
+  transition: background 0.6s ease, border-color 0.6s ease;
 }
 
 .sidebar-header {
@@ -74,8 +85,13 @@ body {
   margin-bottom: 15px;
   color: #94a3b8;
   cursor: pointer;
-  transition: all 0.3s ease; 
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
   border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .history-item:hover {
@@ -94,6 +110,8 @@ body {
   flex-direction: column;
   background: radial-gradient(circle at top right, #1a1429, #0b0e14);
   position: relative;
+  /* MEJORA: Transición de fondo */
+  transition: background 0.8s ease;
 }
 
 /* ENCABEZADO */
@@ -106,7 +124,8 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(11, 14, 20, 0.8);
   backdrop-filter: blur(15px);
-  z-index: 100; /* Asegura que esté sobre los mensajes */
+  z-index: 100;
+  transition: background 0.6s ease, border-color 0.6s ease;
 }
 
 .logo {
@@ -138,7 +157,7 @@ body {
 /* --------- BOTÓN CONFIGURACIÓN (TUERCA) --------- */
 
 .settings-container {
-  margin-left: auto; /* EMPUJA A LA DERECHA */
+  margin-left: auto;
   position: relative;
   display: flex;
   align-items: center;
@@ -174,7 +193,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* --------- PANTALLA DE BIENVENIDA (COPILOT STYLE) --------- */
+/* --------- PANTALLA DE BIENVENIDA --------- */
 
 .welcome-screen {
   display: flex;
@@ -199,6 +218,7 @@ body {
   font-size: 28px;
   margin-bottom: 15px;
   color: #fff;
+  transition: color 0.6s ease;
 }
 
 .welcome-screen p {
@@ -209,6 +229,7 @@ body {
   padding: 20px;
   border-radius: 18px;
   border: 1px solid rgba(168, 85, 247, 0.1);
+  transition: all 0.6s ease;
 }
 
 .welcome-suggestions {
@@ -224,7 +245,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* MENSAJES */
+/* --------- MENSAJES --------- */
 
 .chat-box {
   flex-grow: 1;
@@ -234,8 +255,6 @@ body {
   flex-direction: column;
   gap: 25px;
 }
-
-/* BURBUJAS */
 
 .msg-wrapper {
   display: flex;
@@ -260,6 +279,7 @@ body {
   line-height: 1.5;
   width: fit-content;
   word-break: break-word;
+  transition: background 0.6s ease, color 0.6s ease;
 }
 
 .user .msg {
@@ -278,8 +298,7 @@ body {
   border-bottom-left-radius: 4px;
 }
 
-/* --- ANIMACIÓN DE CARGA (TRES PUNTOS) --- */
-
+/* ANIMACIÓN DE CARGA */
 .typing { display: flex; gap: 5px; align-items: center; min-height: 45px; }
 .typing span { 
   width: 8px; height: 8px; background: #a855f7; border-radius: 50%; 
@@ -290,8 +309,7 @@ body {
 
 @keyframes bounce { 0%, 80%, 100% { transform: scale(0); } 40% { transform: scale(1.0); } }
 
-/* --- ACCIONES DE MENSAJE (COPIAR/ELIMINAR) --- */
-
+/* ACCIONES DE MENSAJE */
 .msg-actions { 
   display: flex; 
   gap: 12px; 
@@ -308,7 +326,7 @@ body {
   padding: 4px 10px; 
   border-radius: 8px; 
   font-size: 11px; 
-  transition: 0.2s; 
+  transition: all 0.3s ease; 
 }
 .action-btn:hover { 
   background: rgba(168, 85, 247, 0.2); 
@@ -316,7 +334,7 @@ body {
   border-color: #a855f7; 
 }
 
-/* --- ENTRADA DE TEXTO --- */
+/* --------- ENTRADA DE TEXTO --------- */
 
 .chat-input { display: flex; padding: 30px; background: transparent; gap: 15px; align-items: center; }
 .chat-input input { 
@@ -327,7 +345,7 @@ body {
   background: rgba(30, 41, 59, 0.4); 
   color: white; 
   outline: none; 
-  transition: 0.3s; 
+  transition: all 0.6s ease; 
   backdrop-filter: blur(10px); 
 }
 .chat-input input:focus { 
@@ -351,7 +369,7 @@ body {
 /* --------- MENÚ DE CONFIGURACIÓN --------- */
 
 .settings-menu {
-  display: none; /* JS lo controla. Empieza cerrado */
+  display: none;
   position: absolute;
   top: 55px;
   right: 0;
@@ -362,6 +380,7 @@ body {
   padding: 15px;
   z-index: 1000;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transition: background 0.6s ease, border-color 0.6s ease;
 }
 
 .settings-menu h3 {
@@ -382,6 +401,7 @@ body {
 .menu-item span {
   font-size: 14px;
   color: #e2e8f0;
+  transition: color 0.6s ease;
 }
 
 /* --------- EL INTERRUPTOR (SWITCH) --------- */
@@ -503,4 +523,338 @@ body.light-mode .chat-input input:focus {
 body.light-mode .action-btn {
   background: #f1f5f9;
   border-color: #e2e8f0;
+}
+
+/* --------- MASCOTA INTERACTIVA (QUIMI) --------- */
+
+.pet-container {
+  position: absolute;
+  bottom: 110px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 90;
+  pointer-events: auto;
+  perspective: 1000px; 
+}
+
+.pet-avatar {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform-style: preserve-3d; 
+}
+
+.pet-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotateY(20deg) rotateX(10deg);
+  filter: drop-shadow(10px 10px 15px rgba(0,0,0,0.5));
+  animation: floating3D 4s ease-in-out infinite;
+}
+
+.pet-shadow {
+  width: 45px;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  margin-top: 5px;
+  filter: blur(4px);
+  animation: shadowResize 4s ease-in-out infinite;
+}
+
+.pet-bubble {
+  background: #1e293b;
+  color: #f1f5f9;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border-bottom-right-radius: 2px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  max-width: 180px;
+  text-align: center;
+  opacity: 0; 
+  transform: translateY(10px) translateZ(20px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  pointer-events: none;
+}
+
+.pet-container.active .pet-bubble {
+  opacity: 1;
+  transform: translateY(0) translateZ(50px);
+}
+
+.pet-container.thinking .pet-avatar img {
+  animation: pulse3D 1.5s infinite ease-in-out;
+  filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.8));
+}
+
+.pet-container.error-state .pet-avatar img {
+  filter: sepia(1) saturate(5) hue-rotate(-50deg) drop-shadow(0 0 15px red);
+  animation: shake3D 0.5s ease-in-out infinite;
+}
+
+@keyframes floating3D {
+  0%, 100% { transform: translateY(0) rotateY(20deg) rotateX(10deg); }
+  50% { transform: translateY(-20px) rotateY(-10deg) rotateX(-5deg); }
+}
+
+@keyframes shadowResize {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(0.5); opacity: 0.15; }
+}
+
+@keyframes pulse3D {
+  0%, 100% { transform: scale(1) rotateY(20deg); }
+  50% { transform: scale(1.15) rotateY(0deg); }
+}
+
+@keyframes shake3D {
+  0%, 100% { transform: translateX(0) rotateY(20deg); }
+  25% { transform: translateX(-5px) rotateZ(-5deg); }
+  75% { transform: translateX(5px) rotateZ(5deg); }
+}
+
+body.light-mode .pet-shadow { background: rgba(0, 0, 0, 0.2); }
+body.light-mode .pet-bubble { background: #ffffff; color: #1e293b; border-color: #e2e8f0; }
+
+/* --------- MODALES --------- */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #161b26;
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  transform: translateY(0);
+  animation: modalSlideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: background 0.6s ease;
+}
+
+@keyframes modalSlideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.modal-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #fff;
+  transition: color 0.6s ease;
+}
+
+.modal-content p {
+  color: #94a3b8;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+.modal-icon-warning {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #f59e0b;
+}
+
+#editChatInput {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  background: rgba(30, 41, 59, 0.5);
+  color: white;
+  margin-bottom: 25px;
+  outline: none;
+  transition: all 0.6s ease;
+}
+
+#editChatInput:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.modal-btn {
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.modal-btn.primary { background: #a855f7; color: white; }
+.modal-btn.primary:hover { background: #c084fc; transform: translateY(-2px); }
+
+.modal-btn.secondary { background: rgba(255, 255, 255, 0.05); color: #94a3b8; }
+.modal-btn.secondary:hover { background: rgba(255, 255, 255, 0.1); color: white; }
+
+.modal-btn.danger { background: #ef4444; color: white; }
+.modal-btn.danger:hover { background: #f87171; box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
+
+/* --------- ACCIONES HISTORIAL --------- */
+
+.history-info {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 10px;
+}
+
+.history-actions {
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transition: 0.3s ease;
+  transform: translateX(20px);
+}
+
+.history-item:hover .history-actions {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.item-action-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.item-action-btn:hover { color: #a855f7; transform: scale(1.2); }
+.item-action-btn.del:hover { color: #ef4444; }
+
+/* MODOS CLARO PARA COMPONENTES RESTANTES */
+body.light-mode .modal-content { background: #ffffff; border-color: #e2e8f0; }
+body.light-mode .modal-content h3 { color: #1e293b; }
+body.light-mode #editChatInput { background: #f8fafc; border-color: #cbd5e1; color: #1e293b; }
+body.light-mode .modal-btn.secondary { background: #f1f5f9; color: #64748b; }
+
+/* ANIMACIÓN DE ELIMINAR */
+.history-item.removing {
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+    pointer-events: none;
+}
+
+/* ANIMACIÓN DE ENTRADA */
+.history-item.new-item {
+    animation: itemReveal 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes itemReveal {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.9);
+        background: rgba(168, 85, 247, 0.4);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* --- ANIMACIONES DE VISIBILIDAD DE QUIMI --- */
+
+/* Estado oculto: pequeño y transparente */
+.pet-hidden {
+    opacity: 0 !important;
+    transform: scale(0) translateY(100px) !important;
+    pointer-events: none !important;
+    transition: all 0.6s cubic-bezier(0.4, 0, 1, 1);
+}
+
+/* --- AJUSTE DE REAPARICIÓN --- */
+.pet-appearing {
+    transform-origin: bottom center;
+    animation: quimiReveal 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.2) forwards;
+}
+
+@keyframes quimiReveal {
+    0% {
+        opacity: 0;
+        transform: scale(0) translateY(50px);
+        filter: brightness(1.5) blur(5px);
+    }
+    70% {
+        transform: scale(1.05) translateY(-5px); /* Escalado sutil */
+        filter: brightness(1.1) blur(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* --------- PERSONALIZACIÓN DE SCROLLBARS (DISEÑO MORADO) --------- */
+
+/* Tamaño de la barra */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Fondo de la barra (el carril) */
+::-webkit-scrollbar-track {
+  background: rgba(15, 17, 26, 0.5);
+  border-radius: 10px;
+}
+
+/* La parte que se mueve (el pulgar) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a855f7, #7e22ce);
+  border-radius: 10px;
+  border: 2px solid #0f111a; 
+}
+
+/* Efecto hover en el scroll */
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+/* Para Firefox (estándar limitado) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #a855f7 rgba(15, 17, 26, 0.5);
+}
+
+/* Mensaje en negrita*/
+.msg b {
+    font-weight: 800; /* Negrita extra fuerte */
+    color: inherit;   /* se Mantiene el color del texto del mensaje */
 }
