@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
  <!-- Iconos Font Awesome para la tuerca de configuración --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
 
  <!-- ENCABEZADO --> 
 <div class="chat-header">
-<img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo QuimicAI" />
+<img src="../static/images/logo.png" class="logo" alt="Logo QuimicAI" />
 <div class="title">
 <h1>QuimicAI</h1>
  <!-- Agregado id para manejar el estado desde JS --> 
@@ -89,7 +89,7 @@
 <div id="ai-pet" class="pet-container">
     <div id="pet-bubble" class="pet-bubble">¡Hola! Soy Quimi.</div>
     <div class="pet-avatar">
-        <img src="{{ url_for('static', filename='images/resuelto.png') }}" id="pet-img" alt="Quimi" />
+        <img src="../static/images/resuelto.png" id="pet-img" alt="Quimi" />
     </div>
     <div class="pet-shadow"></div> 
 </div>
@@ -130,7 +130,7 @@
 </div>
 
  <!-- Script principal de la aplicación --> 
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="../static/js/app.js"></script>
 </body>
 
 </html>
